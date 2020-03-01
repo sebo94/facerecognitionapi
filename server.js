@@ -37,6 +37,6 @@ app.put('/rank', (req, res) => { rank.handleRank(req, res, postgresDb) });
 
 app.post('/rankUrl', (req, res) => { rank.handleApiCall(req, res) });
 
-app.listen(3001, () => {
-    console.log('app is running on port 3001'); 
+app.listen(process.end.PORT || 3000, () => {
+    console.log(`app is running on port ${process.end.PORT}`); 
 })
